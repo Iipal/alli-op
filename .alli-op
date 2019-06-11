@@ -1,0 +1,43 @@
+# Compiler aliases:
+alias _gcc='gcc -Wall -Wextra -Werror'
+alias _clang='clagn -Wall -Wextra -Werror -Wpedantic -Wunused'
+
+# Display additional leaks info aliases (MacOS only):
+alias memlogon='export MallocStackLogging=Yes'
+alias memlogoff='unset MallocStackLogging'
+
+# Git aliases:
+alias gcmsg='git commit -m'
+alias gresm='git fetch --all && git reset --hard origin/master && make re'
+alias gres='git fetch --all && git reset --hard'
+
+# Applications aliases (Only for MacOS in school42):
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias code='~/goinfre/Visual\ Studio\ Code\ -\ Insiders.app/Contents/Resources/app/bin/code'
+alias opencl='/System/Library/Frameworks/OpenCL.framework/Libraries/openclc'
+
+# Scripts aliases:
+alias ipch_clear='~/vscode_ipch_cleaner/vscode_ipch_cleaner.sh'
+alias disk_clear='~/clean.sh'
+
+# Makefile aliases:
+alias debug='make debug'
+alias debugr='make debug_all'
+
+alias debug_all='make -C libft debug && make -C libftsdl debug && make debug'
+alias debug_allr='make -C libft debug_all && make -C libftsdl debug_all && make debug_all'
+
+alias lftsdl='make -C libftsdl && make'
+alias lft='make -C libft && make'
+
+alias norme='make norme'
+
+alias fclean='make fclean'
+alias clean='make clean'
+alias pre='make pre'
+alias re='make re'
+
+# Other:
+alias open='xdg-open' # Only for linux. Delete this if you are using MacOS.
+alias code='code-insiders'
+alias _du='sudo du -hd 1 . | sort -h'

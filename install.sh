@@ -17,10 +17,12 @@ fi
 echo "Copying alli-op to ~/.alli-op..."
 cp .alli-op-tmp ~/.alli-op
 
-echo "Adding ~/.alli-op to your ~/.*shell_name*rc..."
-if [ "$SHELL" == "/bin/zsh" ]; then
+echo -n "Adding ~/.alli-op to your "
+if [[ "$SHELL" == "/bin/zsh" || "$SHELL" == "/usr/bin/zsh" ]]; then
+    echo "~/.zshrc..."
     echo "source ~/.alli-op" >> ~/.zshrc
-elif [ "$SHELL" == "/bin/bash" ]; then
+elif [[ "$SHELL" == "/bin/bash" || "$SHELL" == "/usr/bin/zsh" ]]; then
+    echo "~/.bashrc..."
     echo "source ~/.alli-op" >> ~/.bashrc
 else
     echo "ERROR: Supports only ZSH and bash. Try to add \"source ~/.alli-op\" by yourself in your ~/.*shell_name*rc"

@@ -9,8 +9,9 @@ if [ -z "$UNAME_S" ]; then
 elif [ "$UNAME_S"  == "Darwin" ]; then
     sed '41,42d' alli-op > .alli-op-tmp
 elif [ "$UNAME_S" == "Linus" ]; then
-    sed '4,8d' alli-op > .alli-op-tmp
-    sed '13,18d' alli-op > .alli-op-tmp
+    sed '4,7d' alli-op > .alli-op-tmp
+    sed '9,13d' .alli-op-tmp > .alli-op-tmp2
+    mv .alli-op-tmp2 .alli-op-tmp
 fi
 
 echo "Copying alli-op to ~/.alli-op..."

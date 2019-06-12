@@ -1,6 +1,6 @@
 # Compiler aliases:
-alias _gcc='gcc -Wall -Wextra -Werror'
-alias _clang='clagn -Wall -Wextra -Werror -Wpedantic -Wunused'
+alias _gcc='gcc -Wall -Wextra -Werror -Wpedantic -Wunused'
+alias _clang='clang -Wall -Wextra -Werror -Wpedantic -Wunused'
 
 # Display additional leaks info aliases (MacOS only):
 alias memlogon='export MallocStackLogging=Yes'

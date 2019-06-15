@@ -21,7 +21,7 @@ echo -n "Adding ~/.alli-op to your "
 if [[ "$SHELL" == "/bin/zsh" || "$SHELL" == "/usr/bin/zsh" ]]; then
     echo "~/.zshrc..."
     echo "source ~/.alli-op" >> ~/.zshrc
-elif [[ "$SHELL" == "/bin/bash" || "$SHELL" == "/usr/bin/zsh" ]]; then
+elif [[ "$SHELL" == "/bin/bash" || "$SHELL" == "/usr/bin/bash" ]]; then
     echo "~/.bashrc..."
     echo "source ~/.alli-op" >> ~/.bashrc
 else

@@ -17,7 +17,7 @@ alias code='~/goinfre/Visual\ Studio\ Code\ -\ Insiders.app/Contents/Resources/a
 alias opencl='/System/Library/Frameworks/OpenCL.framework/Libraries/openclc'
 
 # Scripts aliases:
-alias ipch_clear='~/vscode_ipch_cleaner/vscode_ipch_cleaner.sh'
+alias ipch_clear='~/vscode_ipch_cleaner/vscode_ipch_cleaner.sh -q ~ /dev/null'
 alias disk_clear='~/clean.sh'
 
 # Makefile aliases:

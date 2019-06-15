@@ -1,6 +1,6 @@
 # Compiler aliases:
-alias _gcc='gcc -Wall -Wextra -Werror'
-alias _clang='clagn -Wall -Wextra -Werror -Wpedantic -Wunused'
+alias _gcc='gcc -Wall -Wextra -Werror -Wpedantic -Wunused'
+alias _clang='clang -Wall -Wextra -Werror -Wpedantic -Wunused'
 
 # Display additional leaks info aliases (MacOS only):
 alias memlogon='export MallocStackLogging=Yes'
@@ -24,8 +24,8 @@ alias disk_clear='~/clean.sh'
 alias debug='make debug'
 alias debugr='make debug_all'
 
-alias debug_all='make -C libft debug && make -C libftsdl debug && make debug'
-alias debug_allr='make -C libft debug_all && make -C libftsdl debug_all && make debug_all'
+alias debug_all='make -C libft debug && make -C libvectors debug && make -C libftsdl debug && make debug'
+alias debug_allr='make -C libft debug_all && make -C libvectors debug_all && make -C libftsdl debug_all && make debug_all'
 
 alias lftsdl='make -C libftsdl && make'
 alias lft='make -C libft && make'

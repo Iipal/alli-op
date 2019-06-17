@@ -17,8 +17,9 @@ alias code='~/goinfre/Visual\ Studio\ Code\ -\ Insiders.app/Contents/Resources/a
 alias opencl='/System/Library/Frameworks/OpenCL.framework/Libraries/openclc'
 
 # Scripts aliases:
-alias ipch_clear='~/vscode_ipch_cleaner/vscode_ipch_cleaner.sh -q ~ /dev/null'
-alias disk_clear='~/clean.sh'
+alias ipch_clear='~/bin/vscode_ipch_cleaner.sh -q ~ /dev/null'
+alias disk_clear='~/bin/clean.sh'
+alias killp='~/bin/killp.sh'
 
 # Makefile aliases:
 alias debug='make debug'
@@ -40,4 +41,4 @@ alias re='make re'
 # Other:
 alias open='xdg-open' # Only for linux. Delete this if you are using MacOS.
 alias code='code-insiders'
-alias _du='sudo du -hd 1 . | sort -h'
+alias _du='du -hd 1 . | sort -h'

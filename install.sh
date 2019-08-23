@@ -2,6 +2,7 @@
 
 cp alli-op .alli-op-tmp
 
+
 echo "Configure alli-op for your sytem..."
 UNAME_S=$(uname -s)
 if [ -z "$UNAME_S" ]; then
